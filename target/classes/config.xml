@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean name="langu" class="introspring.Language">
+<property name="lang">
+<value>Java</value>
+</property>
+<property name="rating">
+<value>8</value>
+</property>
+</bean>
+
+<bean name="base" class="introspring.Basic">
+<property name="rollno">
+<value>234</value>
+</property>
+<property name="name">
+<value>Anjali</value>
+</property>
+<property name="list">
+<list>
+<value>tomato</value>
+<value>potato</value>
+<value>bean</value>
+
+</list>
+</property>
+<property name="l">
+<ref bean="langu"></ref>
+</property>
+
+</bean>
+
+
+
+
+
+
+</beans>
